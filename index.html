@@ -2,41 +2,56 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Hamza Adjerid | PhD Student</title>
-  <style>
-    body { font-family: Georgia, serif; max-width: 800px; margin: auto; padding: 2rem; line-height: 1.6; }
-    nav a { margin: 0 1rem; text-decoration: none; color: #007acc; }
-    h1, h2 { color: #222; }
-    hr { margin: 2rem 0; }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-  <h1>Hamza Adjerid</h1>
-  <p><em>PhD Student in Control and Model Reduction</em></p>
+  <header>
+    <div class="logo">HA</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Research</a>
+      <a href="#">Publications</a>
+      <a href="cv.pdf">CV</a>
+    </nav>
+  </header>
 
-  <nav>
-    <a href="#research">Research</a>
-    <a href="#publications">Publications</a>
-    <a href="cv.pdf">CV</a>
-  </nav>
+  <main>
+    <section class="left">
+      <img src="profile.jpg" alt="Hamza Adjerid">
+      <h1>Hamza Adjerid</h1>
+      <p class="subtitle">PhD Student in Control Theory</p>
+      <p><a href="#">University / Lab Name</a></p>
 
-  <hr>
+      <div class="icons">
+        <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/yourusername"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fas fa-user-graduate"></i></a>
+        <a href="cv.pdf"><i class="fas fa-file-alt"></i> CV</a>
+      </div>
+    </section>
 
-  <h2 id="research">Research</h2>
-  <p>I study control theory and model reduction for infinite-dimensional systems, including PDEs and DAE systems. My focus is on balanced truncation, finite element methods, and large-scale linear algebra.</p>
+    <section class="right">
+      <h2>About me</h2>
+      <p>I am a PhD student in control and model reduction, with a focus on infinite-dimensional systems and PDEs. I work on balanced truncation, finite elements, and large-scale exponential integrators.</p>
 
-  <h2 id="publications">Publications</h2>
-  <ul>
-    <li>Adjerid, H. (2025). <em>Balanced Truncation for Heat Equation in Infinite-Dimensional Settings</em>, in prep.</li>
-    <li>More to come...</li>
-  </ul>
+      <h2>What I share on <a href="https://github.com/yourusername">GitHub</a></h2>
+      <ul>
+        <li>Code for numerical simulation of PDEs</li>
+        <li>Model reduction scripts for DAEs</li>
+        <li>Data from published research</li>
+      </ul>
 
-  <hr>
-
-  <footer>
-    <p>Contact: hamzaadjerid@vt.edu · <a href="https://github.com/hamzaadjerid">GitHub</a></p>
-  </footer>
+      <h2>Outreach & Projects</h2>
+      <ul>
+        <li><a href="#">Tutorials on finite element solvers</a></li>
+        <li><a href="#">Intro to exponential integrators</a></li>
+      </ul>
+    </section>
+  </main>
 
 </body>
 </html>
