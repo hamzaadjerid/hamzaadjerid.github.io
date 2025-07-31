@@ -1,5 +1,41 @@
-# Welcome to my site
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hamza Adjerid | PhD Student</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 2em; line-height: 1.6; }
+    h1, h2 { color: #1a1a1a; }
+    nav a { margin: 0 10px; text-decoration: none; color: #0066cc; }
+    hr { border: none; border-top: 1px solid #ddd; }
+  </style>
+</head>
+<body>
 
-I'm Hamza, a researcher working on control and model reduction.
+  <h1>Hamza Adjerid</h1>
+  <p><em>PhD Student in Control and Model Reduction</em></p>
+  <p>Email: hamza@example.com | GitHub: <a href="https://github.com/yourusername">yourusername</a></p>
 
-Stay tuned!
+  <nav>
+    <a href="#research">Research</a>
+    <a href="#publications">Publications</a>
+    <a href="#cv">CV</a>
+  </nav>
+
+  <hr>
+
+  <h2 id="research">🧠 Research</h2>
+  <p>I work on theoretical and numerical aspects of balanced truncation for infinite-dimensional systems, particularly PDEs like the heat and Navier-Stokes equations. My work includes finite element discretization, DAEs, and exponential integrators.</p>
+
+  <h2 id="publications">📚 Publications</h2>
+  <ul>
+    <li>Adjerid, H. et al. (2024). "Balanced Truncation for DAE systems." *Systems & Control Letters*, under review.</li>
+    <li>More coming soon...</li>
+  </ul>
+
+  <h2 id="cv">📄 CV</h2>
+  <p><a href="cv.pdf">Download my CV</a></p>
+
+</body>
+</html>
