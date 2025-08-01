@@ -6,16 +6,39 @@
   <title>Hamza Adjerid | PhD Student</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .publications li {
+      margin-bottom: 1rem;
+      text-indent: -1.5em;
+      padding-left: 1.5em;
+    }
+    .collapsible {
+      background: #eee;
+      cursor: pointer;
+      padding: 0.5em 1em;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-weight: bold;
+      margin-top: 1em;
+      width: 100%;
+    }
+    .content {
+      display: none;
+      padding: 0 1em;
+      margin-top: 0.5em;
+    }
+  </style>
 </head>
 <body>
 
   <header>
     <div class="logo">HA</div>
     <nav>
-      <a href="#">Home</a>
-      <a href="#">Research</a>
-      <a href="#">Publications</a>
-      <a href="cv.pdf">CV</a>
+      <a href="#about">Home</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="cv.pdf" target="_blank">CV</a>
     </nav>
   </header>
 
@@ -23,60 +46,89 @@
     <section class="left">
       <img src="profile.jpg" alt="Hamza Adjerid">
       <h1>Hamza Adjerid</h1>
-      <p class="subtitle">PhD Student in Applied Mathematics </p>
-      <p><a href="#">Virginia tech</a></p>
+      <p class="subtitle">PhD Student in Applied Mathematics</p>
+      <p><a href="https://math.vt.edu/" target="_blank">Virginia Tech</a></p>
 
       <div class="icons">
-        <a href="mailto:hamzaadjerid@vt.edu.com"><i class="fas fa-envelope"></i></a>
+        <a href="mailto:hamzaadjerid@vt.edu"><i class="fas fa-envelope"></i></a>
         <a href="https://github.com/hamzaadjerid"><i class="fab fa-github"></i></a>
         <a href="#"><i class="fas fa-user-graduate"></i></a>
-        <a href="cv.pdf"><i class="fas fa-file-alt"></i> CV</a>
+        <a href="cv.pdf" target="_blank"><i class="fas fa-file-alt"></i> CV</a>
       </div>
     </section>
 
     <section class="right">
-      <h2>About me</h2>
+
+      <h2 id="about">About me</h2>
       <p>I am a PhD student in control and model reduction, with a focus on infinite-dimensional systems and PDEs. I work on balanced truncation, finite elements, and large-scale exponential integrators.</p>
 
-      <h2>What I share on <a href="https://github.com/hamzaadjerid">GitHub</a></h2>
+      <h2 id="research">What I share on <a href="https://github.com/hamzaadjerid" target="_blank">GitHub</a></h2>
       <ul>
         <li>Code for numerical simulation of PDEs</li>
         <li>Model reduction scripts for DAEs</li>
         <li>Data from published research</li>
       </ul>
+
       <h2>Education</h2>
-<ul>
-  <li><strong>Ph.D. candidate in Applied Mathematics </strong><br>
-      Virginia Tech-USA – 2021–present</li>
-  <li><strong>M.Sc. in Applied Mathematics </strong><br>
-      Virginia Tech-USA – 2021–2023</li>
-  <li><strong>Ph.D. in Electrical and Electronics Engineering</strong><br>
-       Institute of Electrical and Electronics Engineering, Univsersity of Boumerdes–Algeria - 2017–2021</li>
-  <li><strong>M.Sc. in Control Engineering</strong><br>
-       Institute of Electrical and Electronics Engineering, Univsersity of Boumerdes–Algeria - 2014–2016</li>
-  <li><strong>B.Sc. in Electrical and Electronics Engineering</strong><br>
-       Institute of Electrical and Electronics Engineering, Univsersity of Boumerdes–Algeria - 2011–2014</li>
-</ul>
+      <ul>
+        <li><strong>Ph.D. candidate in Applied Mathematics</strong><br>
+            Virginia Tech, USA – 2021–present</li>
+        <li><strong>M.Sc. in Applied Mathematics</strong><br>
+            Virginia Tech, USA – 2021–2023</li>
+        <li><strong>Ph.D. in Electrical and Electronics Engineering</strong><br>
+            University of Boumerdes, Algeria – 2017–2021</li>
+        <li><strong>M.Sc. in Control Engineering</strong><br>
+            University of Boumerdes, Algeria – 2014–2016</li>
+        <li><strong>B.Sc. in Electrical and Electronics Engineering</strong><br>
+            University of Boumerdes, Algeria – 2011–2014</li>
+      </ul>
 
-      <h2>Publications</h2>
-      <li>
-           H Adjerid, AR Maouche. <strong>Multi-agent system-based decentralized state estimation method for active distribution networks</strong>. <em>Computers & Electrical Engineering, 
-           Volume 86, 106652, ISSN 0045-7906</em>, 2020. <a href="https://doi.org/10.1016/j.compeleceng.2020.106652">[DOI]</a>
-     </li>
-      
-     <li>
-           H Adjerid, J Borggaard, <strong>Sum of Squares Approximations to Energy Functions</strong>. <em>American Control Conference (ACC), Toronto, ON, Canada, 2024, pp. 3308-3315, </em>, 2024,  
-           <a href="https://doi.org/10.23919/ACC60939.2024.10644198">[DOI]</a>
-     </li>
+      <h2 id="publications">Publications</h2>
 
-      <h2>Preprints</h2>
-      <li>
-          H Adjerid, J Borggaard <strong>Energy function approximations for differential algebraic polynomial systems of Stokes-type</strong>. 2025. <a href="https://arxiv.org/abs/2507.18909">[link]</a>
-     </li>
-            
-      
+      <button class="collapsible">▶ Journal & Conference Papers</button>
+      <div class="content">
+        <ul class="publications">
+          <li>
+            <strong>H. Adjerid</strong>, A.R. Maouche. <strong>Multi-agent system-based decentralized state estimation method for active distribution networks</strong>. 
+            <em>Computers & Electrical Engineering</em>, Volume 86, 106652, 2020. 
+            <a href="https://doi.org/10.1016/j.compeleceng.2020.106652" target="_blank">[DOI]</a>
+          </li>
+          <li>
+            <strong>H. Adjerid</strong>, J. Borggaard. <strong>Sum of Squares Approximations to Energy Functions</strong>. 
+            <em>American Control Conference (ACC)</em>, Toronto, ON, Canada, 2024, pp. 3308–3315.  
+            <a href="https://doi.org/10.23919/ACC60939.2024.10644198" target="_blank">[DOI]</a> 
+            <a href="papers/sos-paper.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+          </li>
+        </ul>
+      </div>
+
+      <button class="collapsible">▶ Preprints</button>
+      <div class="content">
+        <ul class="publications">
+          <li>
+            <strong>H. Adjerid</strong>, J. Borggaard. <strong>Energy function approximations for differential algebraic polynomial systems of Stokes-type</strong>. 2025. 
+            <a href="https://arxiv.org/abs/2507.18909" target="_blank">[arXiv]</a>
+          </li>
+        </ul>
+      </div>
+
     </section>
   </main>
+
+  <script>
+    document.querySelectorAll(".collapsible").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const content = btn.nextElementSibling;
+        const expanded = content.style.display === "block";
+        document.querySelectorAll(".content").forEach(c => c.style.display = "none");
+        document.querySelectorAll(".collapsible").forEach(b => b.textContent = b.textContent.replace("▼", "▶"));
+        if (!expanded) {
+          content.style.display = "block";
+          btn.textContent = btn.textContent.replace("▶", "▼");
+        }
+      });
+    });
+  </script>
 
 </body>
 </html>
