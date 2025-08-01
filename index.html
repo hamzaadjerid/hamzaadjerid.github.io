@@ -21,7 +21,6 @@
       outline: none;
       font-weight: bold;
       margin-top: 1em;
-      width: 100%;
     }
     .content {
       display: none;
@@ -84,25 +83,21 @@
       </ul>
 
       <h2 id="publications">Publications</h2>
+      <ul class="publications">
+        <li>
+          <strong>H. Adjerid</strong>, A.R. Maouche. <strong>Multi-agent system-based decentralized state estimation method for active distribution networks</strong>. 
+          <em>Computers & Electrical Engineering</em>, Volume 86, 106652, 2020. 
+          <a href="https://doi.org/10.1016/j.compeleceng.2020.106652" target="_blank">[DOI]</a>
+        </li>
+        <li>
+          <strong>H. Adjerid</strong>, J. Borggaard. <strong>Sum of Squares Approximations to Energy Functions</strong>. 
+          <em>American Control Conference (ACC)</em>, Toronto, ON, Canada, 2024, pp. 3308–3315.  
+          <a href="https://doi.org/10.23919/ACC60939.2024.10644198" target="_blank">[DOI]</a> 
+          <a href="papers/sos-paper.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+        </li>
+      </ul>
 
-      <button class="collapsible">▶ Journal & Conference Papers</button>
-      <div class="content">
-        <ul class="publications">
-          <li>
-            <strong>H. Adjerid</strong>, A.R. Maouche. <strong>Multi-agent system-based decentralized state estimation method for active distribution networks</strong>. 
-            <em>Computers & Electrical Engineering</em>, Volume 86, 106652, 2020. 
-            <a href="https://doi.org/10.1016/j.compeleceng.2020.106652" target="_blank">[DOI]</a>
-          </li>
-          <li>
-            <strong>H. Adjerid</strong>, J. Borggaard. <strong>Sum of Squares Approximations to Energy Functions</strong>. 
-            <em>American Control Conference (ACC)</em>, Toronto, ON, Canada, 2024, pp. 3308–3315.  
-            <a href="https://doi.org/10.23919/ACC60939.2024.10644198" target="_blank">[DOI]</a> 
-            <a href="papers/sos-paper.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
-          </li>
-        </ul>
-      </div>
-
-      <button class="collapsible">▶ Preprints</button>
+      <button type="button" class="collapsible">Preprints</button>
       <div class="content">
         <ul class="publications">
           <li>
@@ -116,17 +111,10 @@
   </main>
 
   <script>
-    document.querySelectorAll(".collapsible").forEach(btn => {
-      btn.addEventListener("click", () => {
-        const content = btn.nextElementSibling;
-        const expanded = content.style.display === "block";
-        document.querySelectorAll(".content").forEach(c => c.style.display = "none");
-        document.querySelectorAll(".collapsible").forEach(b => b.textContent = b.textContent.replace("▼", "▶"));
-        if (!expanded) {
-          content.style.display = "block";
-          btn.textContent = btn.textContent.replace("▶", "▼");
-        }
-      });
+    const coll = document.querySelector(".collapsible");
+    const content = document.querySelector(".content");
+    coll.addEventListener("click", () => {
+      content.style.display = content.style.display === "block" ? "none" : "block";
     });
   </script>
 
